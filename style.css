@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height:100vh;
+    background: radial-gradient(circle at 50% 50%, #fffefc, #e7d7c8, #d4ae9d, #c2847d, #ab5a69, #8c3260, #610c5d, #1f005c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calc{
+    height: 450px;
+    width: 400px;
+    box-shadow: 4px 4px 30px #e20bbb;
+    border-radius: 5%;
+    background: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: auto;
+    padding: 20px;
+   
+}
+
+ form input{
+  height: 75px;
+  width: 360px;
+  background: transparent;
+  margin: auto;
+  text-align: right;
+  font-size: 4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 5%;
+  color: #e20bbb;
+  opacity: .7;
+  border: 1px solid #e20bbb;
+ }
+ .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:none;
+    padding: 20px;
+    justify-content: space-between;
+    
+
+ }
+ button{
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid #e20bbb;
+    box-shadow: 4px 4px 8px #e20bbb;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor:context-menu;
+    flex-wrap: wrap;
+   
+ }
+ .btn:hover{
+    background: rgb(206, 29, 168);
+    color:silver;
+    transform: rotateZ(150deg);
+ }
+ 
+ .btn-orange{
+    background: transparent;
+    color: #000;
+    
+ }
+ .btn-orange:hover{
+    background:rgb(41,40,40);
+    color:black;
+ }
+ .btn-orange:focus {
+    background:rgb(41,40,40);
+    color:rgb(104,98,98);
+
+ }
+ .btn-grey{
+    background: transparent;
+    color: #fff;
+ }
+ .btn-grey:hover{
+    background: rgb(104,98,98);
+    color: rgb(255,255,255);
+ }
+ .btn-grey:active{
+    background: rgb(255,255,255);
+    color:rgb(104,98,98);
+ }
+ .btn-equal {
+    background: transparent;
+ }
+ .btn-equal:hover {
+    background: rgb(104,98,98);
+    color:rgb(104,98,98);
+    transform: rotateZ(150deg);
+ }
+ .btn-clear {
+    background: transparent;
+    
+ }
+ .btn-clear:hover{
+    background: rgb(104,98,98);
+    color: rgb(255,255,255);
+    transform: rotateZ(150deg);
+ }
+ .btn-clear:active{
+    background: rgb(255,255,255);
+    color:rgb(104,98,98);
+ }
